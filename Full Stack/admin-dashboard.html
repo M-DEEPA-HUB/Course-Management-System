@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard — EduSphere</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/cards.css">
+<link rel="stylesheet" href="../css/tables.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="../index.html" class="brand"><span class="brand-mark">E</span><span>EduSphere</span></a>
+    <nav class="side-nav">
+      <a href="admin-dashboard.html" class="active"><span class="icon">🏠</span><span>Dashboard</span></a>
+      <a href="students.html"><span class="icon">🧑‍🎓</span><span>Students</span></a>
+      <a href="courses.html"><span class="icon">📚</span><span>Courses</span></a>
+      <a href="reports.html"><span class="icon">📊</span><span>Reports</span></a>
+      <a href="notifications.html"><span class="icon">🔔</span><span>Notifications</span></a>
+      <a href="#"><span class="icon">⚙️</span><span>Settings</span></a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="../index.html" class="side-nav" style="display:flex;"><span class="icon">↩</span><span>Logout</span></a>
+      <div class="sidebar-user"><div class="avatar">PD</div><div><b>Priya Desai</b><span>Administrator</span></div></div>
+    </div>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <div class="search-box">🔍 Search students, courses...</div>
+      <div class="topbar-actions">
+        <div class="icon-btn">🔔<span class="dot"></span></div>
+        <div class="icon-btn">✉️</div>
+        <div class="avatar">PD</div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="page-head">
+        <div><h1>Admin Overview</h1><p>Institution-wide snapshot of students, courses, and enrollments.</p></div>
+        <a href="courses.html" class="btn btn-primary">+ Add New Course</a>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-top"><div class="stat-icon ic-violet">🧑‍🎓</div><span class="stat-trend up">▲ 8%</span></div>
+          <h3>12,400</h3><span class="label">Total Students</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top"><div class="stat-icon ic-gold">📚</div><span class="stat-trend up">▲ 3%</span></div>
+          <h3>380</h3><span class="label">Total Courses</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top"><div class="stat-icon ic-green">📈</div><span class="stat-trend up">▲ 12%</span></div>
+          <h3>9,860</h3><span class="label">Active Enrollments</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top"><div class="stat-icon ic-red">🏅</div><span class="stat-trend up">▲ 5%</span></div>
+          <h3>6,120</h3><span class="label">Completed Courses</span>
+        </div>
+      </div>
+
+      <div class="stat-grid" style="grid-template-columns:1fr;">
+        <div class="stat-card" style="flex-direction:row; align-items:center; justify-content:space-between;">
+          <div class="flex gap-16" style="align-items:center;">
+            <div class="stat-icon ic-gold">⏳</div>
+            <div><h3 style="font-size:22px;">142</h3><span class="label">Pending Student Approvals</span></div>
+          </div>
+          <a href="students.html" class="btn btn-sm btn-outline">Review Now</a>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-head"><h3>Enrollment Trend (last 6 months)</h3></div>
+          <div class="bar-chart">
+            <div class="bar" style="height:45%;"><span>1.9k</span><em>Feb</em></div>
+            <div class="bar" style="height:58%;"><span>2.4k</span><em>Mar</em></div>
+            <div class="bar" style="height:50%;"><span>2.1k</span><em>Apr</em></div>
+            <div class="bar" style="height:72%;"><span>3.0k</span><em>May</em></div>
+            <div class="bar" style="height:66%;"><span>2.7k</span><em>Jun</em></div>
+            <div class="bar" style="height:90%;"><span>3.7k</span><em>Jul</em></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h3>Recently Joined Students</h3><a href="students.html">View all</a></div>
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div class="student-cell"><div class="avatar">KL</div><div><b>Kevin Liu</b><span>Joined 2 hours ago</span></div></div>
+            <div class="student-cell"><div class="avatar">TS</div><div><b>Tara Singh</b><span>Joined yesterday</span></div></div>
+            <div class="student-cell"><div class="avatar">OM</div><div><b>Omar Haddad</b><span>Joined 2 days ago</span></div></div>
+            <div class="student-cell"><div class="avatar">FL</div><div><b>Fiona Lopez</b><span>Joined 3 days ago</span></div></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

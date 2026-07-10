@@ -1,0 +1,67 @@
+/* =====================================================
+   Forms: inputs, labels, selects, textareas
+   ===================================================== */
+
+.form-group{ margin-bottom:20px; }
+.form-group label{
+  display:block; font-size:13.5px; font-weight:600; color:var(--ink-900); margin-bottom:8px;
+}
+.form-group .hint{ font-size:12px; color:var(--ink-400); margin-top:6px; }
+
+.input, select.input, textarea.input{
+  width:100%;
+  padding:13px 16px;
+  font-size:14.5px;
+  font-family:var(--font-body);
+  color:var(--ink-900);
+  background:var(--surface-soft);
+  border:1px solid var(--border);
+  border-radius:var(--r-sm);
+  transition:border-color .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.input::placeholder{ color:var(--ink-400); }
+.input:focus{
+  outline:none; border-color:var(--violet-600); background:var(--surface);
+  box-shadow:var(--ring);
+}
+.input-icon-wrap{ position:relative; }
+.input-icon-wrap .input{ padding-left:44px; }
+.input-icon{
+  position:absolute; left:15px; top:50%; transform:translateY(-50%);
+  color:var(--ink-400); font-size:15px;
+}
+.form-row{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+
+.form-check{ display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--ink-500); }
+.form-check input{ width:16px; height:16px; accent-color:var(--violet-600); }
+.form-between{ display:flex; align-items:center; justify-content:space-between; margin-bottom:22px; }
+.form-between a{ font-size:13.5px; color:var(--violet-600); font-weight:600; }
+
+.otp-row{ display:flex; gap:10px; }
+.otp-row .input{ text-align:center; font-family:var(--font-mono); font-size:18px; padding:13px 0; }
+
+.upload-drop{
+  border:1.6px dashed var(--border); border-radius:var(--r-md);
+  background:var(--surface-soft); text-align:center; padding:32px;
+  color:var(--ink-400); font-size:13.8px;
+}
+
+/* ---- CSS-only role toggle (Student / Admin) using :target + :has() ---- */
+.role-panels{ position:relative; }
+.role-panel-admin{ display:none; }
+.role-panel-student{ display:block; }
+.auth-card:has(.role-panel-admin:target) .role-panel-student{ display:none; }
+.auth-card:has(.role-panel-admin:target) .role-panel-admin{ display:block; }
+.auth-card:has(.role-panel-admin:target) .toggle-admin{ background:var(--ink-900); color:#fff; }
+.auth-card:has(.role-panel-admin:target) .toggle-student{ background:transparent; color:var(--ink-500); }
+.role-toggle .toggle-student{ background:var(--ink-900); color:#fff; border-radius:var(--r-pill); }
+
+/* filter/toolbar controls used on catalog/students/courses pages */
+.toolbar{
+  display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+  background:var(--surface); border:1px solid var(--border); border-radius:var(--r-md);
+  padding:16px 20px; margin-bottom:26px;
+}
+.toolbar .input{ background:var(--surface-soft); }
+.toolbar-search{ flex:1; min-width:220px; }
+.toolbar select.input{ width:auto; min-width:160px; }

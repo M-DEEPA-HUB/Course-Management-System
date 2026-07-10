@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notifications — EduSphere</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/cards.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="../index.html" class="brand"><span class="brand-mark">E</span><span>EduSphere</span></a>
+    <nav class="side-nav">
+      <a href="student-dashboard.html"><span class="icon">🏠</span><span>Dashboard</span></a>
+      <a href="course-catalog.html"><span class="icon">📚</span><span>Course Catalog</span></a>
+      <a href="my-courses.html"><span class="icon">🎓</span><span>My Courses</span></a>
+      <a href="progress.html"><span class="icon">📈</span><span>Progress</span></a>
+      <a href="activities.html"><span class="icon">🕒</span><span>Activities</span></a>
+      <a href="notifications.html" class="active"><span class="icon">🔔</span><span>Notifications</span></a>
+      <a href="student-profile.html"><span class="icon">👤</span><span>Profile</span></a>
+      <a href="#"><span class="icon">⚙️</span><span>Settings</span></a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="../index.html" class="side-nav" style="display:flex;"><span class="icon">↩</span><span>Logout</span></a>
+      <div class="sidebar-user"><div class="avatar">AJ</div><div><b>Amara Johnson</b><span>Student</span></div></div>
+    </div>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <div class="search-box">🔍 Search notifications...</div>
+      <div class="topbar-actions">
+        <div class="icon-btn">🔔<span class="dot"></span></div>
+        <div class="icon-btn">✉️</div>
+        <div class="avatar">AJ</div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="page-head">
+        <div><h1>Notifications</h1><p>Stay on top of new courses, reminders, and achievements.</p></div>
+        <a href="#" class="btn btn-outline">Mark all as read</a>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:14px;">
+
+        <div class="notif-card unread">
+          <div class="notif-icon ic-violet">📘</div>
+          <div class="notif-body">
+            <h4>New Course Available</h4>
+            <p>"Advanced Data Visualization" just launched in the Data Science category.</p>
+          </div>
+          <span class="notif-time">10 min ago</span>
+        </div>
+
+        <div class="notif-card unread">
+          <div class="notif-icon ic-gold">⏰</div>
+          <div class="notif-body">
+            <h4>Assignment Reminder</h4>
+            <p>Your "Wireframing Case Study" assignment is due in 2 days.</p>
+          </div>
+          <span class="notif-time">2 hours ago</span>
+        </div>
+
+        <div class="notif-card">
+          <div class="notif-icon ic-red">🏆</div>
+          <div class="notif-body">
+            <h4>Certificate Ready</h4>
+            <p>Your certificate for Digital Marketing Mastery is ready to download.</p>
+          </div>
+          <span class="notif-time">Yesterday</span>
+        </div>
+
+        <div class="notif-card">
+          <div class="notif-icon ic-green">✅</div>
+          <div class="notif-body">
+            <h4>Course Completed</h4>
+            <p>Congratulations! You've completed Full-Stack Web Development.</p>
+          </div>
+          <span class="notif-time">5 days ago</span>
+        </div>
+
+        <div class="notif-card">
+          <div class="notif-icon ic-violet">🛠️</div>
+          <div class="notif-body">
+            <h4>System Update</h4>
+            <p>We've improved the Progress page with new completion insights.</p>
+          </div>
+          <span class="notif-time">1 week ago</span>
+        </div>
+
+      </div>
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

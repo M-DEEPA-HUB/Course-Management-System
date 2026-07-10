@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports — EduSphere Admin</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/cards.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="../index.html" class="brand"><span class="brand-mark">E</span><span>EduSphere</span></a>
+    <nav class="side-nav">
+      <a href="admin-dashboard.html"><span class="icon">🏠</span><span>Dashboard</span></a>
+      <a href="students.html"><span class="icon">🧑‍🎓</span><span>Students</span></a>
+      <a href="courses.html"><span class="icon">📚</span><span>Courses</span></a>
+      <a href="reports.html" class="active"><span class="icon">📊</span><span>Reports</span></a>
+      <a href="notifications.html"><span class="icon">🔔</span><span>Notifications</span></a>
+      <a href="#"><span class="icon">⚙️</span><span>Settings</span></a>
+    </nav>
+    <div class="sidebar-footer">
+      <a href="../index.html" class="side-nav" style="display:flex;"><span class="icon">↩</span><span>Logout</span></a>
+      <div class="sidebar-user"><div class="avatar">PD</div><div><b>Priya Desai</b><span>Administrator</span></div></div>
+    </div>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <div class="search-box">🔍 Search reports...</div>
+      <div class="topbar-actions">
+        <div class="icon-btn">🔔<span class="dot"></span></div>
+        <div class="icon-btn">✉️</div>
+        <div class="avatar">PD</div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="page-head">
+        <div><h1>Reports & Analytics</h1><p>Institution-wide performance across students and courses.</p></div>
+        <a href="#" class="btn btn-outline">Export Report</a>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-top"><div class="stat-icon ic-violet">📈</div><span class="stat-trend up">▲ 6.2%</span></div>
+          <h3>96%</h3><span class="label">Avg. Completion Rate</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top"><div class="stat-icon ic-gold">⭐</div><span class="stat-trend up">▲ 0.2</span></div>
+          <h3>4.8</h3><span class="label">Avg. Course Rating</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top"><div class="stat-icon ic-green">⏱️</div><span class="stat-trend up">▲ 4 min</span></div>
+          <h3>38 min</h3><span class="label">Avg. Session Length</span>
+        </div>
+        <div class="stat-card">
+          <div class="stat-top"><div class="stat-icon ic-red">🔁</div><span class="stat-trend down">▼ 1.4%</span></div>
+          <h3>3.1%</h3><span class="label">Dropout Rate</span>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-head"><h3>Monthly Enrollments</h3></div>
+          <div class="bar-chart">
+            <div class="bar" style="height:38%;"><span>1.6k</span><em>Feb</em></div>
+            <div class="bar" style="height:52%;"><span>2.2k</span><em>Mar</em></div>
+            <div class="bar" style="height:44%;"><span>1.9k</span><em>Apr</em></div>
+            <div class="bar" style="height:70%;"><span>2.9k</span><em>May</em></div>
+            <div class="bar" style="height:63%;"><span>2.6k</span><em>Jun</em></div>
+            <div class="bar" style="height:88%;"><span>3.6k</span><em>Jul</em></div>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="panel-head"><h3>Enrollments by Category</h3></div>
+          <div style="display:flex; align-items:center; gap:28px; flex-wrap:wrap; justify-content:center;">
+            <div class="donut">
+              <div class="donut-label"><b>380</b><span>Courses</span></div>
+            </div>
+            <div class="legend">
+              <div class="legend-item"><span class="legend-dot" style="background:var(--violet-600);"></span>Development — 45%</div>
+              <div class="legend-item"><span class="legend-dot" style="background:var(--gold-500);"></span>Design — 25%</div>
+              <div class="legend-item"><span class="legend-dot" style="background:var(--green-600);"></span>Data Science — 20%</div>
+              <div class="legend-item"><span class="legend-dot" style="background:var(--border);"></span>Business — 10%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:24px;">
+        <div class="panel-head"><h3>Top Performing Courses</h3></div>
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <div class="detail-row"><span class="label">Full-Stack Web Development</span><span class="value">98% completion · ⭐ 4.9</span></div>
+          <div class="detail-row"><span class="label">UI/UX Design Fundamentals</span><span class="value">95% completion · ⭐ 4.9</span></div>
+          <div class="detail-row"><span class="label">Python for Data Analysis</span><span class="value">93% completion · ⭐ 4.8</span></div>
+          <div class="detail-row"><span class="label">Digital Marketing Mastery</span><span class="value">91% completion · ⭐ 4.7</span></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+</body>
+</html>

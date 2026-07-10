@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — EduSphere</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/forms.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<div class="auth-shell">
+
+  <!-- Visual side -->
+  <div class="auth-visual">
+    <a href="../index.html" class="brand" style="color:#fff;"><span class="brand-mark">E</span>EduSphere</a>
+    <div class="auth-visual-content">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.12); color:#fff;">● Join 12,400+ learners</span>
+      <h2>Create your account and start tracking real progress today.</h2>
+      <p>Whether you're a student building new skills or an administrator managing a program, EduSphere gives you the tools to see outcomes clearly.</p>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>380</b><span>Courses</span></div>
+      <div class="hero-stat"><b>96%</b><span>Completion</span></div>
+      <div class="hero-stat"><b>4.8/5</b><span>Rating</span></div>
+    </div>
+  </div>
+
+  <!-- Form side -->
+  <div class="auth-form-side">
+    <div class="auth-card">
+      <a href="../index.html" class="brand"><span class="brand-mark">E</span>EduSphere</a>
+      <h1>Create an account</h1>
+      <p>Register as a student to start learning, or as an admin to manage courses.</p>
+
+      <div class="role-toggle">
+        <a href="#student-panel" class="toggle-student">Student</a>
+        <a href="#admin-panel" class="toggle-admin">Admin</a>
+      </div>
+
+      <div class="role-panels">
+        <!-- Student Registration -->
+        <div id="student-panel" class="role-panel role-panel-student">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="s-name">Full Name</label>
+              <input class="input" type="text" id="s-name" placeholder="e.g. Amara Johnson">
+            </div>
+            <div class="form-group">
+              <label for="s-email">Email Address</label>
+              <input class="input" type="email" id="s-email" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="s-phone">Phone Number</label>
+              <input class="input" type="tel" id="s-phone" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="s-pass">Password</label>
+                <input class="input" type="password" id="s-pass" placeholder="Create a password">
+              </div>
+              <div class="form-group">
+                <label for="s-cpass">Confirm Password</label>
+                <input class="input" type="password" id="s-cpass" placeholder="Re-enter password">
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" style="margin-top:8px;">Register as Student</button>
+          </form>
+        </div>
+
+        <!-- Admin Registration -->
+        <div id="admin-panel" class="role-panel role-panel-admin">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="a-name">Admin Name</label>
+              <input class="input" type="text" id="a-name" placeholder="e.g. Priya Sharma">
+            </div>
+            <div class="form-group">
+              <label for="a-email">Email Address</label>
+              <input class="input" type="email" id="a-email" placeholder="you@institution.edu">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="a-pass">Password</label>
+                <input class="input" type="password" id="a-pass" placeholder="Create a password">
+              </div>
+              <div class="form-group">
+                <label for="a-cpass">Confirm Password</label>
+                <input class="input" type="password" id="a-cpass" placeholder="Re-enter password">
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block" style="margin-top:8px;">Register as Admin</button>
+          </form>
+        </div>
+      </div>
+
+      <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

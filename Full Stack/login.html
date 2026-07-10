@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log In — EduSphere</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/forms.css">
+<link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<div class="auth-shell">
+
+  <div class="auth-visual">
+    <a href="../index.html" class="brand" style="color:#fff;"><span class="brand-mark">E</span>EduSphere</a>
+    <div class="auth-visual-content">
+      <span class="eyebrow" style="background:rgba(255,255,255,0.12); color:#fff;">● Welcome back</span>
+      <h2>Pick up right where you left off.</h2>
+      <p>Your courses, progress, and certificates are waiting. Log in to continue your learning journey.</p>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>12,400+</b><span>Learners</span></div>
+      <div class="hero-stat"><b>6,120</b><span>Certificates</span></div>
+    </div>
+  </div>
+
+  <div class="auth-form-side">
+    <div class="auth-card">
+      <a href="../index.html" class="brand"><span class="brand-mark">E</span>EduSphere</a>
+      <h1>Welcome back</h1>
+      <p>Log in to your student or admin account to continue.</p>
+
+      <div class="role-toggle">
+        <a href="#student-login" class="toggle-student">Student</a>
+        <a href="#admin-login" class="toggle-admin">Admin</a>
+      </div>
+
+      <div class="role-panels">
+        <div id="student-login" class="role-panel role-panel-student">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="sl-email">Email Address</label>
+              <input class="input" type="email" id="sl-email" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="sl-pass">Password</label>
+              <input class="input" type="password" id="sl-pass" placeholder="Enter your password">
+            </div>
+            <div class="form-between" style="margin-top:-4px;">
+              <label class="form-check"><input type="checkbox"> Remember me</label>
+              <a href="forgot-password.html">Forgot password?</a>
+            </div>
+            <button type="button" class="btn btn-primary btn-block">Log in as Student</button>
+          </form>
+        </div>
+
+        <div id="admin-login" class="role-panel role-panel-admin">
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="al-email">Admin Email</label>
+              <input class="input" type="email" id="al-email" placeholder="admin@institution.edu">
+            </div>
+            <div class="form-group">
+              <label for="al-pass">Password</label>
+              <input class="input" type="password" id="al-pass" placeholder="Enter your password">
+            </div>
+            <div class="form-between" style="margin-top:-4px;">
+              <label class="form-check"><input type="checkbox"> Remember me</label>
+              <a href="forgot-password.html">Forgot password?</a>
+            </div>
+            <button type="button" class="btn btn-primary btn-block">Log in as Admin</button>
+          </form>
+        </div>
+      </div>
+
+      <p class="auth-switch">Don't have an account? <a href="register.html">Register</a></p>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

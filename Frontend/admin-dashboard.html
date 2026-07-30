@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard · Meridian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+      <nav class="nav-links">
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="courses.html">Courses</a>
+        <a href="add-course.html">Add Course</a>
+        <a href="notifications.html">Notifications</a>
+      </nav>
+      <div class="nav-actions">
+        <span class="user-chip"><span class="dot"></span>Admin</span>
+        <a href="login.html" class="btn btn-outline-light btn-sm">Log out</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Admin</p>
+      <h1>Welcome back, Admin</h1>
+      <p>Here&rsquo;s how the catalog is performing today.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="stat-grid">
+        <div class="stat-card"><span class="label">Total Courses</span><div class="value">42</div><span class="delta">+3 this month</span></div>
+        <div class="stat-card"><span class="label">Active Students</span><div class="value">1,284</div><span class="delta">+126 this month</span></div>
+        <div class="stat-card"><span class="label">New Enrollments</span><div class="value">318</div><span class="delta">+8.4%</span></div>
+        <div class="stat-card"><span class="label">Certificates Issued</span><div class="value">96</div><span class="delta down">-2 this week</span></div>
+      </div>
+
+      <div class="dash-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Recently Updated Courses</h3>
+            <a href="courses.html" class="btn btn-outline btn-sm">View all</a>
+          </div>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>Course</th><th>Category</th><th>Students</th><th>Status</th><th></th></tr></thead>
+              <tbody>
+                <tr><td><span class="cell-title">Intro to UX Research</span><br><span class="cell-sub">Updated 2 days ago</span></td><td>Design</td><td>214</td><td><span class="badge-status published">Published</span></td><td class="table-actions"><a href="course-details.html" class="btn btn-outline btn-sm">View</a><a href="edit-course.html" class="btn btn-outline btn-sm">Edit</a></td></tr>
+                <tr><td><span class="cell-title">Python for Data Analysis</span><br><span class="cell-sub">Updated 4 days ago</span></td><td>Data</td><td>388</td><td><span class="badge-status published">Published</span></td><td class="table-actions"><a href="course-details.html" class="btn btn-outline btn-sm">View</a><a href="edit-course.html" class="btn btn-outline btn-sm">Edit</a></td></tr>
+                <tr><td><span class="cell-title">Product Management Foundations</span><br><span class="cell-sub">Updated 1 week ago</span></td><td>Business</td><td>156</td><td><span class="badge-status draft">Draft</span></td><td class="table-actions"><a href="course-details.html" class="btn btn-outline btn-sm">View</a><a href="edit-course.html" class="btn btn-outline btn-sm">Edit</a></td></tr>
+                <tr><td><span class="cell-title">Applied Machine Learning</span><br><span class="cell-sub">Updated 2 weeks ago</span></td><td>Data</td><td>301</td><td><span class="badge-status pending">Pending Review</span></td><td class="table-actions"><a href="course-details.html" class="btn btn-outline btn-sm">View</a><a href="edit-course.html" class="btn btn-outline btn-sm">Edit</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <aside class="panel">
+          <div class="panel-header"><h3>Needs Attention</h3></div>
+          <ul class="list-simple" style="padding: 8px 22px;">
+            <li><span class="li-icon">3</span><div class="li-body"><strong>Courses pending review</strong><span>Awaiting content approval</span></div></li>
+            <li><span class="li-icon">12</span><div class="li-body"><strong>Support tickets open</strong><span>From enrolled students</span></div></li>
+            <li><span class="li-icon">5</span><div class="li-body"><strong>Certificates to approve</strong><span>Completed this week</span></div></li>
+          </ul>
+          <div class="panel-body" style="padding-top: 0;">
+            <a href="add-course.html" class="btn btn-primary btn-block">Add New Course</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+        <div class="footer-links">
+          <a href="browse-courses.html">Browse Courses</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Create Account</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Meridian Learning. All rights reserved.</span>
+        <span>Built for guided, self-paced learning.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

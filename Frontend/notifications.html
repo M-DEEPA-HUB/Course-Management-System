@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notifications · Meridian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+      <nav class="nav-links">
+        <a href="student-dashboard.html">Dashboard</a>
+        <a href="browse-courses.html">Browse Courses</a>
+        <a href="my-courses.html">My Courses</a>
+        <a href="progress.html">Progress</a>
+        <a href="notifications.html">Notifications</a>
+      </nav>
+      <div class="nav-actions">
+        <span class="user-chip"><span class="dot"></span>Student</span>
+        <a href="login.html" class="btn btn-outline-light btn-sm">Log out</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Inbox</p>
+      <h1>Notifications</h1>
+      <p>Course updates, reminders, and account activity.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="panel">
+        <div class="notif-tabs">
+          <span class="notif-tab active">All</span>
+          <span class="notif-tab">Unread</span>
+          <span class="notif-tab">Courses</span>
+          <span class="notif-tab">System</span>
+        </div>
+        <ul class="notif-list mt-24">
+          <li class="notif-item unread">
+          <span class="notif-icon type-cert">&#127942;</span>
+          <div class="notif-body"><strong>Certificate ready</strong><p>Your certificate for Product Management Foundations is ready to download.</p></div>
+          <span class="notif-time">2h ago</span>
+        </li>
+          <li class="notif-item unread">
+          <span class="notif-icon type-course">&#128218;</span>
+          <div class="notif-body"><strong>New lesson added</strong><p>“Advanced Segmentation” was added to Python for Data Analysis.</p></div>
+          <span class="notif-time">1d ago</span>
+        </li>
+          <li class="notif-item ">
+          <span class="notif-icon type-system">&#128276;</span>
+          <div class="notif-body"><strong>Weekly reminder</strong><p>You&rsquo;re close to a 7-day streak. Finish one lesson today to keep it going.</p></div>
+          <span class="notif-time">1d ago</span>
+        </li>
+          <li class="notif-item ">
+          <span class="notif-icon type-course">&#128172;</span>
+          <div class="notif-body"><strong>Instructor reply</strong><p>Dana Kim replied to your question in Intro to UX Research.</p></div>
+          <span class="notif-time">3d ago</span>
+        </li>
+          <li class="notif-item ">
+          <span class="notif-icon type-system">&#9989;</span>
+          <div class="notif-body"><strong>Enrollment confirmed</strong><p>You&rsquo;re enrolled in Intro to UX Research.</p></div>
+          <span class="notif-time">6d ago</span>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+        <div class="footer-links">
+          <a href="browse-courses.html">Browse Courses</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Create Account</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Meridian Learning. All rights reserved.</span>
+        <span>Built for guided, self-paced learning.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

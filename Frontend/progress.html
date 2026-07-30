@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Progress · Meridian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+      <nav class="nav-links">
+        <a href="student-dashboard.html">Dashboard</a>
+        <a href="browse-courses.html">Browse Courses</a>
+        <a href="my-courses.html">My Courses</a>
+        <a href="progress.html">Progress</a>
+        <a href="notifications.html">Notifications</a>
+      </nav>
+      <div class="nav-actions">
+        <span class="user-chip"><span class="dot"></span>Student</span>
+        <a href="login.html" class="btn btn-outline-light btn-sm">Log out</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Learning</p>
+      <h1>Your Progress</h1>
+      <p>A look at how far you&rsquo;ve come across every course.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="stat-grid">
+        <div class="stat-card"><span class="label">Courses Enrolled</span><div class="value">3</div><span class="delta">1 completed</span></div>
+        <div class="stat-card"><span class="label">Lessons Completed</span><div class="value">27</div><span class="delta">of 45 total</span></div>
+        <div class="stat-card"><span class="label">Hours Learned</span><div class="value">14.5</div><span class="delta">this month</span></div>
+        <div class="stat-card"><span class="label">Certificates Earned</span><div class="value">1</div><span class="delta">Product Management</span></div>
+      </div>
+
+      <div class="section-head">
+        <h2 style="font-size:1.2rem;">Course Breakdown</h2>
+      </div>
+      <div class="panel">
+        <div class="panel-body">
+          <div class="flex-between mb-24"><h4 class="mb-0">Intro to UX Research</h4><span class="muted">4 of 6 modules</span></div>
+          <div class="progress-row"><div class="progress-track"><div class="progress-fill" style="width:65%;"></div></div><span class="progress-pct">65%</span></div>
+        </div>
+        <hr class="divider" style="margin:0 26px;">
+        <div class="panel-body">
+          <div class="flex-between mb-24"><h4 class="mb-0">Python for Data Analysis</h4><span class="muted">3 of 9 modules</span></div>
+          <div class="progress-row"><div class="progress-track"><div class="progress-fill" style="width:30%;"></div></div><span class="progress-pct">30%</span></div>
+        </div>
+        <hr class="divider" style="margin:0 26px;">
+        <div class="panel-body">
+          <div class="flex-between mb-24"><h4 class="mb-0">Product Management Foundations</h4><span class="muted">Completed &middot; <a href="certificate.html">View certificate</a></span></div>
+          <div class="progress-row"><div class="progress-track"><div class="progress-fill gold" style="width:100%;"></div></div><span class="progress-pct">100%</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+        <div class="footer-links">
+          <a href="browse-courses.html">Browse Courses</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Create Account</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Meridian Learning. All rights reserved.</span>
+        <span>Built for guided, self-paced learning.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

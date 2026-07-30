@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard · Meridian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+      <nav class="nav-links">
+        <a href="student-dashboard.html">Dashboard</a>
+        <a href="browse-courses.html">Browse Courses</a>
+        <a href="my-courses.html">My Courses</a>
+        <a href="progress.html">Progress</a>
+        <a href="notifications.html">Notifications</a>
+      </nav>
+      <div class="nav-actions">
+        <span class="user-chip"><span class="dot"></span>Student</span>
+        <a href="login.html" class="btn btn-outline-light btn-sm">Log out</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Dashboard</p>
+      <h1>Welcome back, Asha</h1>
+      <p>You&rsquo;re 65% through Intro to UX Research &mdash; keep the streak going.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="stat-grid">
+        <div class="stat-card"><span class="label">Enrolled Courses</span><div class="value">3</div><span class="delta">1 completed</span></div>
+        <div class="stat-card"><span class="label">Hours This Week</span><div class="value">4.5</div><span class="delta">+1.2 vs last week</span></div>
+        <div class="stat-card"><span class="label">Current Streak</span><div class="value">6 days</div><span class="delta">Personal best: 11</span></div>
+        <div class="stat-card"><span class="label">Certificates</span><div class="value">1</div><span class="delta">Product Management</span></div>
+      </div>
+
+      <div class="dash-grid">
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Continue Learning</h3>
+            <a href="my-courses.html" class="btn btn-outline btn-sm">View all courses</a>
+          </div>
+          <div class="panel-body" style="display:flex; flex-direction:column; gap:18px;">
+            <div>
+              <div class="flex-between mb-24"><h4 class="mb-0">Intro to UX Research</h4><a href="course-content.html" class="btn btn-primary btn-sm">Resume</a></div>
+              <div class="progress-row"><div class="progress-track"><div class="progress-fill" style="width:65%;"></div></div><span class="progress-pct">65%</span></div>
+            </div>
+            <hr class="divider">
+            <div>
+              <div class="flex-between mb-24"><h4 class="mb-0">Python for Data Analysis</h4><a href="course-content.html" class="btn btn-outline btn-sm">Resume</a></div>
+              <div class="progress-row"><div class="progress-track"><div class="progress-fill" style="width:30%;"></div></div><span class="progress-pct">30%</span></div>
+            </div>
+          </div>
+        </div>
+        <aside class="panel">
+          <div class="panel-header"><h3>Notifications</h3><a href="notifications.html" class="muted">View all</a></div>
+          <ul class="list-simple" style="padding: 8px 22px;">
+            <li><span class="li-icon">&#127942;</span><div class="li-body"><strong>Certificate ready</strong><span>Product Management Foundations</span></div></li>
+            <li><span class="li-icon">&#128218;</span><div class="li-body"><strong>New lesson added</strong><span>Python for Data Analysis</span></div></li>
+            <li><span class="li-icon">&#128276;</span><div class="li-body"><strong>Reminder</strong><span>Finish Module 4 by Friday</span></div></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+        <div class="footer-links">
+          <a href="browse-courses.html">Browse Courses</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Create Account</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Meridian Learning. All rights reserved.</span>
+        <span>Built for guided, self-paced learning.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

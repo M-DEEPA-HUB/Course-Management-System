@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In · Meridian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main>
+  <div class="auth-shell">
+    <section class="auth-side">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+      <blockquote>
+        &ldquo;Consistency beats intensity. Show up, and the path takes care of the rest.&rdquo;
+        <cite>Marcus Webb, Lead Instructor</cite>
+      </blockquote>
+      <div class="stats">
+        <div><strong>94%</strong><span>Completion rate</span></div>
+        <div><strong>4.8/5</strong><span>Learner rating</span></div>
+      </div>
+    </section>
+    <section class="auth-main">
+      <div class="auth-card">
+        <a href="index.html" class="top-link">&larr; Back to home</a>
+        <h1>Sign in</h1>
+        <p class="lead">Pick up right where you left off.</p>
+        <form id="login-form" novalidate>
+          <div class="form-alert" role="alert"></div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com">
+            <p class="error-message">Enter a valid email address.</p>
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Your password">
+            <p class="error-message">Enter your password.</p>
+          </div>
+          <div class="flex-between mb-24">
+            <label class="checkbox-row"><input type="checkbox" id="remember-me" name="remember-me"><span>Remember me</span></label>
+            <a href="forgot-password.html" class="muted">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+        </form>
+        <p class="below-form">New to Meridian? <a href="register.html">Create an account</a></p>
+        <p class="muted text-center mt-24">Tip: use an email containing &ldquo;admin&rdquo; to preview the admin dashboard.</p>
+      </div>
+    </section>
+  </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

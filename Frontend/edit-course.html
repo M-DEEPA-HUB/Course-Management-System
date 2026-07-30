@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Course · Meridian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+      <nav class="nav-links">
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="courses.html">Courses</a>
+        <a href="add-course.html">Add Course</a>
+        <a href="notifications.html">Notifications</a>
+      </nav>
+      <div class="nav-actions">
+        <span class="user-chip"><span class="dot"></span>Admin</span>
+        <a href="login.html" class="btn btn-outline-light btn-sm">Log out</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+  <div class="page-header">
+    <div class="container">
+      <p class="breadcrumb"><a href="courses.html">Courses</a> &rsaquo; Edit</p>
+      <h1>Edit Course</h1>
+      <p>Update the details for <strong style="color:#fff;">Intro to UX Research</strong>.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container" style="max-width: 720px;">
+      <form id="course-form" data-mode="edit" novalidate class="panel panel-body">
+        <div class="form-alert" role="alert"></div>
+        <div class="field">
+          <label for="course-title">Course title</label>
+          <input type="text" id="course-title" name="course-title" placeholder="e.g. Intro to UX Research" value="Intro to UX Research">
+          <p class="error-message">Give the course a title.</p>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="course-category">Category</label>
+            <select id="course-category" name="course-category">
+              <option value="">Select a category</option>
+              <option selected>Design</option>
+              <option >Data</option>
+              <option >Business</option>
+              <option >Development</option>
+            </select>
+            <p class="error-message">Choose a category.</p>
+          </div>
+          <div class="field">
+            <label for="course-instructor">Instructor</label>
+            <input type="text" id="course-instructor" name="course-instructor" placeholder="e.g. Dana Kim" value="Dana Kim">
+            <p class="error-message">Enter the instructor name.</p>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="course-duration">Duration</label>
+            <input type="text" id="course-duration" name="course-duration" placeholder="e.g. 6 hours" value="6 hours">
+            <p class="error-message">Enter a duration.</p>
+          </div>
+          <div class="field">
+            <label for="course-price">Price (USD)</label>
+            <input type="number" id="course-price" name="course-price" min="0" step="0.01" placeholder="0 for free" value="49">
+            <p class="error-message">Enter a valid, non-negative price.</p>
+          </div>
+        </div>
+        <div class="field">
+          <label for="course-thumbnail">Thumbnail URL <span class="muted">(optional)</span></label>
+          <input type="url" id="course-thumbnail" name="course-thumbnail" placeholder="https://&hellip;">
+        </div>
+        <div class="field">
+          <label for="course-description">Description</label>
+          <textarea id="course-description" name="course-description" placeholder="What will students learn in this course?">A practical introduction to planning, running, and synthesizing user research for product teams.</textarea>
+          <p class="error-message">Add a short description.</p>
+        </div>
+        <div class="btn-group mt-24">
+          <button type="submit" class="btn btn-primary">Save Changes</button>
+          <a href="courses.html" class="btn btn-outline">Cancel</a>
+          <button type="button" class="btn btn-danger" style="margin-left:auto;">Delete Course</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+        <div class="footer-links">
+          <a href="browse-courses.html">Browse Courses</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Create Account</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Meridian Learning. All rights reserved.</span>
+        <span>Built for guided, self-paced learning.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

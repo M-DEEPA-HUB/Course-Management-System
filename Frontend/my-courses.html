@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Courses · Meridian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+      <nav class="nav-links">
+        <a href="student-dashboard.html">Dashboard</a>
+        <a href="browse-courses.html">Browse Courses</a>
+        <a href="my-courses.html">My Courses</a>
+        <a href="progress.html">Progress</a>
+        <a href="notifications.html">Notifications</a>
+      </nav>
+      <div class="nav-actions">
+        <span class="user-chip"><span class="dot"></span>Student</span>
+        <a href="login.html" class="btn btn-outline-light btn-sm">Log out</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Learning</p>
+      <h1>My Courses</h1>
+      <p>Pick up where you left off, or revisit something you&rsquo;ve completed.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2 style="font-size:1.2rem;">In Progress</h2>
+      </div>
+      <div class="course-grid mb-24">
+        <div class="course-progress-card panel">
+          <div class="top-row">
+            <div>
+              <span class="badge badge-gold">Design</span>
+              <h3 class="mt-24" style="margin-top:8px;">Intro to UX Research</h3>
+            </div>
+            <span class="muted">4 of 6 modules</span>
+          </div>
+          <div class="progress-row mb-24">
+            <div class="progress-track"><div class="progress-fill" style="width:65%;"></div></div>
+            <span class="progress-pct">65%</span>
+          </div>
+          <a href="course-content.html" class="btn btn-primary btn-sm">Continue</a>
+        </div>
+        <div class="course-progress-card panel">
+          <div class="top-row">
+            <div>
+              <span class="badge badge-teal">Data</span>
+              <h3 class="mt-24" style="margin-top:8px;">Python for Data Analysis</h3>
+            </div>
+            <span class="muted">3 of 9 modules</span>
+          </div>
+          <div class="progress-row mb-24">
+            <div class="progress-track"><div class="progress-fill" style="width:30%;"></div></div>
+            <span class="progress-pct">30%</span>
+          </div>
+          <a href="course-content.html" class="btn btn-primary btn-sm">Continue</a>
+        </div>
+      </div>
+      <div class="section-head">
+        <h2 style="font-size:1.2rem;">Completed</h2>
+      </div>
+      <div class="course-grid">
+        <div class="course-progress-card panel">
+          <div class="top-row">
+            <div>
+              <span class="badge badge-navy">Business</span>
+              <h3 class="mt-24" style="margin-top:8px;">Product Management Foundations</h3>
+            </div>
+            <span class="muted">Completed</span>
+          </div>
+          <div class="progress-row mb-24">
+            <div class="progress-track"><div class="progress-fill" style="width:100%;"></div></div>
+            <span class="progress-pct">100%</span>
+          </div>
+          <a href="course-content.html" class="btn btn-primary btn-sm">Continue</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+        <div class="footer-links">
+          <a href="browse-courses.html">Browse Courses</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Create Account</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Meridian Learning. All rights reserved.</span>
+        <span>Built for guided, self-paced learning.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

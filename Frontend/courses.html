@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Courses · Meridian</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+      <nav class="nav-links">
+        <a href="admin-dashboard.html">Dashboard</a>
+        <a href="courses.html">Courses</a>
+        <a href="add-course.html">Add Course</a>
+        <a href="notifications.html">Notifications</a>
+      </nav>
+      <div class="nav-actions">
+        <span class="user-chip"><span class="dot"></span>Admin</span>
+        <a href="login.html" class="btn btn-outline-light btn-sm">Log out</a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main>
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Admin</p>
+      <h1>Manage Courses</h1>
+      <p>Review, edit, and publish everything in the Meridian catalog.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar">
+        <input type="search" placeholder="Search courses by title or instructor&hellip;">
+        <select>
+          <option>All categories</option>
+          <option>Design</option>
+          <option>Data</option>
+          <option>Business</option>
+          <option>Development</option>
+        </select>
+        <select>
+          <option>All statuses</option>
+          <option>Published</option>
+          <option>Draft</option>
+          <option>Pending Review</option>
+        </select>
+        <a href="add-course.html" class="btn btn-primary">+ Add New Course</a>
+      </div>
+
+      <div class="panel">
+        <div class="table-wrap">
+          <table class="data-table">
+            <thead><tr><th>Course</th><th>Category</th><th>Instructor</th><th>Students</th><th>Status</th><th></th></tr></thead>
+            <tbody>
+              <tr><td><span class="cell-title">Intro to UX Research</span></td><td>Design</td><td>Dana Kim</td><td>214</td><td><span class="badge-status published">Published</span></td><td class="table-actions"><a href="edit-course.html" class="btn btn-outline btn-sm">Edit</a><button class="btn btn-danger btn-sm">Delete</button></td></tr>
+              <tr><td><span class="cell-title">Python for Data Analysis</span></td><td>Data</td><td>Sam Reyes</td><td>388</td><td><span class="badge-status published">Published</span></td><td class="table-actions"><a href="edit-course.html" class="btn btn-outline btn-sm">Edit</a><button class="btn btn-danger btn-sm">Delete</button></td></tr>
+              <tr><td><span class="cell-title">Product Management Foundations</span></td><td>Business</td><td>Priya Nair</td><td>156</td><td><span class="badge-status draft">Draft</span></td><td class="table-actions"><a href="edit-course.html" class="btn btn-outline btn-sm">Edit</a><button class="btn btn-danger btn-sm">Delete</button></td></tr>
+              <tr><td><span class="cell-title">Applied Machine Learning</span></td><td>Data</td><td>Tom Becker</td><td>301</td><td><span class="badge-status pending">Pending Review</span></td><td class="table-actions"><a href="edit-course.html" class="btn btn-outline btn-sm">Edit</a><button class="btn btn-danger btn-sm">Delete</button></td></tr>
+              <tr><td><span class="cell-title">Visual Design Systems</span></td><td>Design</td><td>Dana Kim</td><td>97</td><td><span class="badge-status published">Published</span></td><td class="table-actions"><a href="edit-course.html" class="btn btn-outline btn-sm">Edit</a><button class="btn btn-danger btn-sm">Delete</button></td></tr>
+              <tr><td><span class="cell-title">Front-End Development Bootcamp</span></td><td>Development</td><td>Ivy Chen</td><td>422</td><td><span class="badge-status published">Published</span></td><td class="table-actions"><a href="edit-course.html" class="btn btn-outline btn-sm">Edit</a><button class="btn btn-danger btn-sm">Delete</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="brand"><span class="brand-mark"></span>Meridian</a>
+        <div class="footer-links">
+          <a href="browse-courses.html">Browse Courses</a>
+          <a href="notifications.html">Notifications</a>
+          <a href="login.html">Sign In</a>
+          <a href="register.html">Create Account</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Meridian Learning. All rights reserved.</span>
+        <span>Built for guided, self-paced learning.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
